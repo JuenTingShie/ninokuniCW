@@ -1,3 +1,7 @@
+---
+editor: Itsukipuru
+edit_date: 2021-09-15 15:09:16
+---
 # 寶箱地點
 
 <span style="background-color:yellow">冒險紀錄</span>
@@ -48,7 +52,8 @@
 <small>85等才能開寶箱/景點</small>
 ![](figures/chests/rainbow.JPG)
 
+> [!NOTE]
 > 資料來源: [巴哈](https://forum.gamer.com.tw/C.php?bsn=37619&snA=1316)  
 > 整理者: [獨角獸](https://home.gamer.com.tw/homeindex.php?owner=D0857422)  
-> 上次更新: 2021/09/15  
-> 更新者: Itsukipuru
+> 上次更新: {{edit_date}}  
+> 更新者: {{editor}}

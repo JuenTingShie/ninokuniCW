@@ -1,30 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>教育相承 - 處女座 - 二之國各式懶人包與攻略整理</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="來自二之國處女座的 教育相承 參上!">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <!-- Emoji -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
 
-  <!-- Gitalk -->
-  <link rel="stylesheet" href="https://unpkg.com/gitalk@1.6.0/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk@1.6.0/dist/gitalk.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>教育相承 - 處女座 - 二之國各式懶人包與攻略整理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="來自二之國處女座的 教育相承 參上!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+
+    <!-- EditOnGithub -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+
+    <!-- Gitalk -->
+    <link rel="stylesheet" href="https://unpkg.com/gitalk@1.6.0/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk@1.6.0/dist/gitalk.min.js"></script>
 
 </head>
+
 <body>
-<div id="app">稍等片刻...</div>
-  <script>
-    window.$docsify = {
-      loadSidebar: true,
-      subMaxLevel: 2,
-      loadNavbar: true,
-    }
-  </script> 
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <div id="app">稍等片刻...</div>
+    <script>
+        window.$docsify = {
+            loadSidebar: true,
+            subMaxLevel: 2,
+            loadNavbar: true,
+            mustache: {
+                noPackage: true
+            },
+            'flexible-alerts': {
+                style: 'flat'
+            },
+            plugins: [
+                EditOnGithubPlugin.create(
+                    "https://github.com/JuenTingShie/ninokuniCW/tree/main/docs/",
+                    "https://github.com/JuenTingShie/ninokuniCW/tree/main/docs/",
+                    "在Github上編輯"),
+            ],
+            autoFooter: {
+                name: "Itsukipuru", // company display name (required)
+                copyYear: 2021, // start copyright year (required)
+                url: "https://github.com/JuenTingShie", // company url (optional)
+                // policy: Bool | String, // show Privacy Policy (optional)
+                // terms: Bool | String, // show Terms of Service (optional)
+                // cookies: Bool | String, // show Cookies Policy (optional)
+                onBody: true // if true it is on the main doc
+            },
+
+        }
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+    <!-- mustache -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-mustache"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/front-matter.min.js"></script>
+
+    <!-- Emoji -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+
+    <!-- Flexible Alerts -->
+    <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+
+    <!-- Auto Add Space -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-pangu/lib/pangu.min.js"></script>
+
+    <!-- Sidebar Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/@markbattistella/docsify-sidebarfooter@latest"></script>
+
+    <!-- Zoom Image -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 </body>
+
 </html>

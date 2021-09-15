@@ -1,3 +1,8 @@
+---
+editor: Itsukipuru
+edit_date: 2021-09-15 15:23:03
+---
+
 # 教育相承 - 處女座 - 二之國各式懶人包與攻略整理
 
 ![First King](figures/landpage/first_king_ko.jpg)
@@ -8,7 +13,8 @@
 
 歡迎加入 **`教育相承`** 的各位!
 
-最後，作為王國中最閒的 Itsukipuru ，此網站由我規畫管理，若有任何疑慮，歡迎於 github 提出 [issue](https://github.com/JuenTingShie/ninokuniCW/issues) ，我會盡快在第一時間回覆。
+最後，作為王國中最閒的Itsukipuru，此網站由我規畫管理，若有任何疑慮，歡迎於github提出[issue](https://github.com/JuenTingShie/ninokuniCW/issues)，我會盡快在第一時間回覆。
 
-> 上次更新: 2021/09/15  
-> 更新者: Itsukipuru  
+> [!NOTE]
+> 上次更新: {{edit_date}}  
+> 更新者: {{editor}}
