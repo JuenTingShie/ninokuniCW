@@ -17,6 +17,8 @@ editor: Itsukipuru
 | 逢甲鄧紫棋                                    | 番茄洋芋                                      |
 | ![逢甲鄧紫棋](figures/leaders/逢甲鄧紫棋.png) | ![番茄洋芋](figures/leaders/番茄洋芋.png)     |
 
+<small>[about](about.md)</small>
+
 > [!NOTE]
 > 上次更新: {docsify-updated}  
 > 更新者: {{editor}}
