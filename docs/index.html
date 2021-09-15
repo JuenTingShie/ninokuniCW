@@ -11,30 +11,30 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
 
   <!-- Gitalk -->
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
 </head>
 <body>
-  <div id="app">稍等片刻...</div>
+<div id="app">稍等片刻...</div>
   <script>
     window.$docsify = {
       loadSidebar: true,
       subMaxLevel: 2,
     }
   </script> 
-
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 
   <!-- Gitalk -->
   <script>
     const gitalk = new Gitalk({
-      repo: 'ninokuniCW',
       client_id: '1c69d3c43d6949d30288',
       client_secret: 'dbbccbbf5431416ac7780a284f4e6d4bbdc0f290',
+      accessToken: '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',
+      repo: 'ninokuniCW',
       owner: 'JuenTingShie',
-      admin: 'JuenTingShie',
+      admin: ['JuenTingShie'],
       id: 'Gitalk',
       // facebook-like distraction free mode
       distractionFreeMode: true,
@@ -50,6 +50,5 @@
       gitalk.render('gitalk-container');
     });
   </script>
-  
 </body>
 </html>
