@@ -25,30 +25,5 @@
   </script> 
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-
-  <!-- Gitalk -->
-  <script>
-    const gitalk = new Gitalk({
-      client_id: '1c69d3c43d6949d30288',
-      client_secret: '1c92a0cd3da671e9d8b05c92355d031607543ad6',
-      accessToken: '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',
-      repo: 'ninokuniCW',
-      owner: 'JuenTingShie',
-      admin: ['JuenTingShie'],
-      id: '',
-      // facebook-like distraction free mode
-      distractionFreeMode: true,
-    });
-
-    document.addEventListener("DOMContentLoaded", function(event) { 
-      let talk = document.createElement("div");
-      talk.setAttribute("id","gitalk-container");
-      let article = document.getElementsByClassName("content");
-
-      article[0].append(talk)
-
-      gitalk.render('gitalk-container');
-    });
-  </script>
 </body>
 </html>
