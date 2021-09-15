@@ -1,0 +1,20 @@
+---
+editor: Itsukipuru
+---
+
+## [iOS領取序號](https://couponweb.netmarble.com/coupon/ennt/1324)
+
+---
+
+## 2021/09/14 <!-- {docsify-ignore} -->
+
+| 序號    | 內容                                                                       |
+| ------- | -------------------------------------------------------------------------- |
+| 9SHOWTW | 幻獸召喚x10                                                                |
+| TWITEMB | ★4研磨劑選擇箱x5個<br>金幣x20萬<br>升階石選擇箱x5個<br>裝備召喚兌換券x10張 |
+
+---  
+
+> [!NOTE]
+> 上次更新: {docsify-updated}   
+> 更新者: {{editor}}
