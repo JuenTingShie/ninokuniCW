@@ -46,6 +46,7 @@
                         console.log(document.title);
                         var utterances = document.getElementsByClassName("utterances");
 
+                        // Kill old utterances and add script again to reload
                         if (utterances.length == 0) {
                             add_comment();
                         } else {
@@ -68,20 +69,27 @@
             },
         }
 
+        function setAttributes(el, attrs) {
+            for (var key in attrs) {
+                el.setAttribute(key, attrs[key]);
+            }
+        }
+
         function add_comment() {
-            // setTimeout(() => {
             var talk = document.createElement("script");
-            talk.setAttribute("src", "https://utteranc.es/client.js");
-            talk.setAttribute("repo", "JuenTingShie/ninokuniCW");
-            talk.setAttribute("issue-term", "title");
-            talk.setAttribute("theme", "github-light");
-            talk.setAttribute("crossorigin", "anonymous");
-            talk.setAttribute("async", "");
+
+            setAttributes(talk, {
+                "src": "https://utteranc.es/client.js",
+                "repo": "JuenTingShie/ninokuniCW",
+                "issue-term": "title",
+                "theme": "github-light",
+                "crossorigin": "anonymous",
+                "async": ""
+            })
 
             let article = document.getElementById('main');
 
             article.append(talk);
-            // }, 5000);
         }
     </script>
     <!-- Docsify v4 -->
@@ -105,29 +113,6 @@
 
     <!-- Zoom Image -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-
-    <!-- <script>
-        window.addEventListener("load", function(event) {
-            console.log(document.title);
-
-            setTimeout(() => {
-                console.log("World!");
-                let talk = document.createElement("script");
-                talk.setAttribute("src", "https://utteranc.es/client.js");
-                talk.setAttribute("repo", "JuenTingShie/ninokuniCW");
-                talk.setAttribute("issue-term", "title");
-                talk.setAttribute("theme", "github-light");
-                talk.setAttribute("crossorigin", "anonymous");
-                talk.setAttribute("async", "");
-
-                let article = document.getElementsByClassName("content");
-
-                article[0].append(talk);
-
-                console.log(document.title)
-            }, 5000);
-        });
-    </script> -->
 </body>
 <footer id="mb-footer"></footer>
 
