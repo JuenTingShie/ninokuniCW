@@ -12,17 +12,17 @@ editor: Itsukipuru
 * 落地 3-34 等:  
     克雷納斯東部 - 無名洞窟
 
-    ![克雷納斯東部](figures/resources/gold/3-34.png ":size=70%")
+    ![克雷納斯東部](figures/resources/gold/3-34.png)
 
 * 35-45等:  
     莫爾森林 - 豬豬族駐地
 
-    ![莫爾森林](figures/resources/gold/35-45.png ":size=70%")
+    ![莫爾森林](figures/resources/gold/35-45.png)
 
 * 46-51等:  
     瑟雷涅森林 - 豬豬族營地
 
-    ![瑟雷涅森林](figures/resources/gold/46-51.png ":size=70%")
+    ![瑟雷涅森林](figures/resources/gold/46-51.png)
 
 ## 寶石
 
