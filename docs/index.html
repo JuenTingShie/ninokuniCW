@@ -41,9 +41,21 @@
                     "https://github.com/JuenTingShie/ninokuniCW/tree/main/docs/",
                     "https://github.com/JuenTingShie/ninokuniCW/tree/main/docs/",
                     "📝在Github上編輯"),
-                titlePlugin({
-                    suffix: ' | My Website'
-                })
+                function(hook, vm) {
+                    hook.doneEach(function() {
+                        console.log(document.title);
+                        var utterances = document.getElementsByClassName("utterances");
+
+                        if (utterances.length == 0) {
+                            add_comment();
+                        } else {
+                            while (utterances.firstChild) {
+                                utterances.removeChild(utterances.firstChild);
+                            }
+                            add_comment();
+                        }
+                    });
+                },
             ],
             autoFooter: {
                 name: "Itsukipuru", // company display name (required)
@@ -56,12 +68,20 @@
             },
         }
 
-        function titlePlugin(config) {
-            return (hook, vm) => {
-                hook.doneEach((content) => {
-                    document.title += ""
-                });
-            }
+        function add_comment() {
+            // setTimeout(() => {
+            var talk = document.createElement("script");
+            talk.setAttribute("src", "https://utteranc.es/client.js");
+            talk.setAttribute("repo", "JuenTingShie/ninokuniCW");
+            talk.setAttribute("issue-term", "title");
+            talk.setAttribute("theme", "github-light");
+            talk.setAttribute("crossorigin", "anonymous");
+            talk.setAttribute("async", "");
+
+            let article = document.getElementById('main');
+
+            article.append(talk);
+            // }, 5000);
         }
     </script>
     <!-- Docsify v4 -->
@@ -86,7 +106,7 @@
     <!-- Zoom Image -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 
-    <script>
+    <!-- <script>
         window.addEventListener("load", function(event) {
             console.log(document.title);
 
@@ -107,7 +127,7 @@
                 console.log(document.title)
             }, 5000);
         });
-    </script>
+    </script> -->
 </body>
 <footer id="mb-footer"></footer>
 
