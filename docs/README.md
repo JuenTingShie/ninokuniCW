@@ -14,6 +14,8 @@ editor: Itsukipuru
 
 最後，作為王國中最閒的Itsukipuru，此網站由我規畫管理，若有任何疑慮，歡迎於github提出[issue](https://github.com/JuenTingShie/ninokuniCW/issues)，我會盡快在第一時間回覆。
 
+---
+
 > [!NOTE]
-> 上次更新: {docsify-updated}   
+> 上次更新: {docsify-updated}  
 > 更新者: {{editor}}

@@ -9,6 +9,10 @@ editor: Itsukipuru
 1. 在稱號的地方解完稱號就會給予戰力。詳細請看[稱號](title.md)篇。  
 2. 武器、防具、飾品，不管是在強化、覺醒、升階，都有一定的成就可以達成，因此可以從比較好抽到的1、2星裝備開始下手。
 
+而為了要能夠不斷的覺醒裝備，則是需要金幣與裝備圖紙(可從武器或防具其中一種開始)，就要從刷[金幣](resources.md#金幣)與刷[裝備圖紙](resources.md#裝備圖紙)開始。
+
+在準備好自認足夠的金幣(通常在80萬金幣以上)之後去做裝備，裝備若存放在信箱裡，可以透過篩選的方式，將目前正在覺醒的裝備篩選出來，按照自己的順序一個一個覺醒。
+
 ---
 
 ## 靈魂石
@@ -61,8 +65,15 @@ editor: Itsukipuru
 
     12、24星＝送3個泰特羅拼圖
 
+---
+
+## 拼圖
+
+---
+
 > [!NOTE]
 > 資料來源: [巴哈](https://forum.gamer.com.tw/C.php?bsn=37619&snA=3490)  
 > 整理者: [好狗 hogo](https://home.gamer.com.tw/homeindex.php?owner=hogo)  
-> 上次更新: {docsify-updated}   
+> 部分資料: {{editor}}  
+> 上次更新: {docsify-updated}  
 > 更新者: {{editor}}
