@@ -2,7 +2,7 @@
 editor: Itsukipuru
 ---
 
-# 教育相承 - 處女座 - 二之國各式懶人包與攻略整理
+# 教育相承 - 處女座 - 二之國各式懶人包與攻略整理 <!-- {docsify-ignore} -->
 
 ![First King](figures/landpage/first_king_ko.jpg)
 

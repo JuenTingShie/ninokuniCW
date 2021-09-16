@@ -41,6 +41,9 @@
                     "https://github.com/JuenTingShie/ninokuniCW/tree/main/docs/",
                     "https://github.com/JuenTingShie/ninokuniCW/tree/main/docs/",
                     "📝在Github上編輯"),
+                titlePlugin({
+                    suffix: ' | My Website'
+                })
             ],
             autoFooter: {
                 name: "Itsukipuru", // company display name (required)
@@ -51,7 +54,14 @@
                 // cookies: Bool | String, // show Cookies Policy (optional)
                 onBody: true, // if true it is on the main doc
             },
+        }
 
+        function titlePlugin(config) {
+            return (hook, vm) => {
+                hook.doneEach((content) => {
+                    document.title += ""
+                });
+            }
         }
     </script>
     <!-- Docsify v4 -->
@@ -77,18 +87,25 @@
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function(event) {
-            let talk = document.createElement("script");
-            talk.setAttribute("src", "https://utteranc.es/client.js");
-            talk.setAttribute("repo", "JuenTingShie/ninokuniCW");
-            talk.setAttribute("issue-term", "url");
-            talk.setAttribute("theme", "github-light");
-            talk.setAttribute("crossorigin", "anonymous");
-            talk.setAttribute("async", "");
+        window.addEventListener("load", function(event) {
+            console.log(document.title);
 
-            let article = document.getElementsByClassName("content");
+            setTimeout(() => {
+                console.log("World!");
+                let talk = document.createElement("script");
+                talk.setAttribute("src", "https://utteranc.es/client.js");
+                talk.setAttribute("repo", "JuenTingShie/ninokuniCW");
+                talk.setAttribute("issue-term", "title");
+                talk.setAttribute("theme", "github-light");
+                talk.setAttribute("crossorigin", "anonymous");
+                talk.setAttribute("async", "");
 
-            article[0].append(talk);
+                let article = document.getElementsByClassName("content");
+
+                article[0].append(talk);
+
+                console.log(document.title)
+            }, 5000);
         });
     </script>
 </body>
