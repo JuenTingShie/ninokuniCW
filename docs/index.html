@@ -55,6 +55,8 @@
                             }
                             add_comment();
                         }
+
+                        random_corner()
                     });
                 },
             ],
@@ -66,6 +68,20 @@
                 // terms: Bool | String, // show Terms of Service (optional)
                 // cookies: Bool | String, // show Cookies Policy (optional)
                 onBody: true, // if true it is on the main doc
+            },
+            scrollToTop: {
+                auto: true,
+                text: '🔝',
+                right: 15,
+                bottom: 15,
+                offset: 500
+            },
+            repo: 'true', // set the docsify show the corner
+            corner: {
+                // the icon link url to another site  
+                url: "https://github.com/JuenTingShie/ninokuniCW",
+                // the default preset icon in docsify-corner  
+                icon: "temp_src",
             },
         }
 
@@ -91,6 +107,30 @@
 
             article.append(talk);
         }
+
+        function getElementByXpath(path) {
+            return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+        }
+
+        function random_corner() {
+            function getRandomInt(max) {
+                return Math.floor(Math.random() * max);
+            }
+            var gifs = [
+                "https://media4.giphy.com/media/eLv7gJpxqiQtbNNQUe/giphy.gif",
+                "https://media3.giphy.com/media/mTs11L9uuyGiI/giphy.gif",
+                "https://media3.giphy.com/media/5xRW2cUKfcyQg/giphy.gif",
+                "https://media2.giphy.com/media/NMBl7NxAlPDrOgq6aQ/giphy.gif",
+                "https://media4.giphy.com/media/l4FGxwDbQ9zJxko6s/giphy.gif",
+                "https://media1.giphy.com/media/l4FGrHErakgV8GRO0/giphy.gif",
+                "https://media1.giphy.com/media/NQDcH2ZZaPV8QBDYK3/giphy.gif",
+                "https://media0.giphy.com/media/cmgAyICMLiK63JCtd6/giphy.gif",
+            ]
+
+            var c = getElementByXpath("/html/body/a/img")
+            console.log(getRandomInt(gifs.length));
+            c.src = gifs[getRandomInt(gifs.length)];
+        }
     </script>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -113,6 +153,12 @@
 
     <!-- Zoom Image -->
     <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+    <!-- ScrollToTop -->
+    <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
+
+    <!-- corner -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-corner/dist/docsify-corner.min.js"></script>
 </body>
 <footer id="mb-footer"></footer>
 

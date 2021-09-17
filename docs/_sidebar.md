@@ -5,5 +5,8 @@
 * [:jigsaw:拼圖模擬器](https://myar.tistory.com/entry/ninokuni-tetro-puzzle-calculator)
 * [:ticket:活動序號紀錄](coupon.md)
 * [:family:成員](leaders.md)
+* 
+![](https://media3.giphy.com/media/VaqJoSUq0wzWMcgA2M/giphy.gif)
+
 
 <footer id="mb-footer"></footer>
