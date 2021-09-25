@@ -23,6 +23,11 @@ editor: Itsukipuru
     瑟雷涅森林 - 豬豬族營地
 
     ![瑟雷涅森林](figures/resources/gold/46-51.png)
+    
+* 52- :
+    亞雷克拉高原 - 沙塵原野
+    
+    ![亞雷克拉高原](figures/resources/gold/52-.png)
 
 ## 寶石
 
